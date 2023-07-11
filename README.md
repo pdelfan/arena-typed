@@ -1,4 +1,4 @@
-![cover](./cover.png)
+![cover](https://raw.githubusercontent.com/pdelfan/arena-typed/main/cover.png)
 
 # Arena-typed
 
