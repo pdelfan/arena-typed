@@ -1,0 +1,37 @@
+{
+  "name": "arena-typed",
+  "version": "1.0.0",
+  "description": "Unofficial are.na API wrapper for TypeScript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json --watchAll",
+    "build": "tsc",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "arena",
+    "are.na",
+    "arena wrapper",
+    "arena typescript",
+    "arena ts"
+  ],
+  "author": "Pouria Delfanazari",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "jest": "^29.6.1",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
