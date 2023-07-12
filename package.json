@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Unofficial are.na API wrapper for TypeScript",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "types": "./types/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json --watchAll",
     "build": "tsc",
