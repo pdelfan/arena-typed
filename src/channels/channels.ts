@@ -1,4 +1,6 @@
+import { Block, BlockCreationData, Connection } from '../blocks/types';
 import { Request } from '../request/request';
+import { User } from '../users/types';
 import {
   AddCollaboratorsResponse,
   Channel,
@@ -7,11 +9,7 @@ import {
   Contents,
   GetOrDeleteCollaboratorsResponse,
   PaginationParams,
-  Block,
-  BlockCreationData,
-  Connection,
-  User,
-} from '../../types/index';
+} from './types';
 
 export class Channels extends Request {
   private endpoint = 'channels';

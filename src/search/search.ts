@@ -1,5 +1,8 @@
-import { Block, Channel, PaginationParams, User, SearchResponse } from '../../types/index';
+import { Block } from '../blocks/types';
+import { Channel, PaginationParams } from '../channels/types';
 import { Request } from '../request/request';
+import { User } from '../users/types';
+import { SearchResponse } from './types';
 
 export class Search extends Request {
   private endpoint = 'search';

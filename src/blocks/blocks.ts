@@ -1,5 +1,6 @@
+import { Channel } from '../channels/types';
 import { Request } from '../request/request';
-import { Block, BlockCreationData, BlockUpdateData, Channel, ChannelsResponse } from '../../types/index';
+import { Block, BlockCreationData, BlockUpdateData, ChannelsResponse } from './types';
 
 export class Blocks extends Request {
   private endpoint = 'blocks';

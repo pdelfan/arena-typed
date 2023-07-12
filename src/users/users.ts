@@ -1,5 +1,6 @@
-import { FollowerResponse, Following, FollowingResponse, User, UserChannelsResponse, Channel } from '../../types/index';
+import { Channel } from '../channels/types';
 import { Request } from '../request/request';
+import { FollowerResponse, Following, FollowingResponse, User, UserChannelsResponse } from './types';
 
 export class Users extends Request {
   private endpoint = 'users/';

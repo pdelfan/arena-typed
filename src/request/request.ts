@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { APIResponse } from '../../types/index';
+import { APIResponse } from './types';
 
 export class Request {
   private baseURL = 'https://api.are.na/v2/';
