@@ -27,9 +27,9 @@ export type Block = {
     filename: string;
     content_type: string;
     updated_at: Date;
-    thumb: string;
-    display: string;
-    original: string;
+    thumb: { url: string };
+    display: { url: string };
+    original: { url: string };
   };
   user: User;
   connections?: Channel[];
@@ -72,7 +72,7 @@ export type BlockCreationData =
   | { source: string; content?: never }
   | { source?: never; content: string };
 
-  export type BlockUpdateData = {
+export type BlockUpdateData = {
   title?: string;
   description?: string;
   content?: string;
