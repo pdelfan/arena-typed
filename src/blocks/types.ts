@@ -1,16 +1,16 @@
-import { Channel } from "../channels/types";
-import { User } from "../users/types";
+import { Channel } from '../channels/types';
+import { User } from '../users/types';
 
 export type Block = {
   id: number;
   title: string | null;
   updated_at: Date;
   created_at: Date;
-  state: "Available" | "Failure" | "Procesed" | "Processing";
+  state: 'Available' | 'Failure' | 'Procesed' | 'Processing';
   comment_count: number;
   generated_title: string;
-  class: "Image" | "Text" | "Link" | "Media" | "Attachment";
-  base_class: "Block";
+  class: 'Image' | 'Text' | 'Link' | 'Media' | 'Attachment';
+  base_class: 'Block';
   content: string | null;
   content_html: string | null;
   description: string | null;
@@ -24,12 +24,18 @@ export type Block = {
     } | null;
   };
   image: null | {
-    filename: string;
     content_type: string;
+    display: { url: string };
+    filename: string;
+    large: { url: string };
+    original: {
+      file_size: number;
+      file_size_display: string;
+      url: string;
+    };
+    square: { url: string };
+    thumb: { url: string };
     updated_at: Date;
-    thumb: string;
-    display: string;
-    original: string;
   };
   user: User;
   connections?: Channel[];
@@ -41,8 +47,8 @@ export type Connection = {
   current_page: number;
   per: number;
   channel_title: string | null;
-  base_class: "Channels";
-  class: "Channel";
+  base_class: 'Channels';
+  class: 'Channel';
   channels: Channel[];
 };
 
@@ -52,27 +58,25 @@ export type BlocksResponse = {
   current_page: number;
   per: number;
   channel_title: string | null;
-  base_class: "Block";
-  class: "Text";
+  base_class: 'Block';
+  class: 'Text';
   channels: Channel[];
 };
 
 export type ChannelsResponse = {
-  base_class: "Block";
+  base_class: 'Block';
   channel_title: null | string;
   channels: Channel[];
-  class: "Image" | "Text" | "Link" | "Media" | "Attachment";
+  class: 'Image' | 'Text' | 'Link' | 'Media' | 'Attachment';
   current_page: number;
   length: number;
   per: number;
   total_pages: number;
 };
 
-export type BlockCreationData =
-  | { source: string; content?: never }
-  | { source?: never; content: string };
+export type BlockCreationData = { source: string; content?: never } | { source?: never; content: string };
 
-  export type BlockUpdateData = {
+export type BlockUpdateData = {
   title?: string;
   description?: string;
   content?: string;

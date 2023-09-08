@@ -272,25 +272,25 @@ arena.channels
 
 ##### Block
 
-| Property         | Type                                                                                                                    |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| id               | number                                                                                                                  |
-| title            | string \| null                                                                                                          |
-| updated_at       | Date                                                                                                                    |
-| created_at       | Date                                                                                                                    |
-| state            | "Available" \| "Failure" \| "Procesed" \| "Processing"                                                                  |
-| comment_count    | number                                                                                                                  |
-| generated_title  | string                                                                                                                  |
-| class            | "Image" \| "Text" \| "Link" \| "Media" \| "Attachment"                                                                  |
-| base_class       | "Block"                                                                                                                 |
-| content          | string \| null                                                                                                          |
-| content_html     | string \| null                                                                                                          |
-| description      | string \| null                                                                                                          |
-| description_html | string \| null                                                                                                          |
-| source           | null \| { title?: string; url: string; provider: { name: string; url: string; } \| null; }                              |
-| image            | null \| { filename: string; content_type: string; updated_at: Date; thumb: string; display: string; original: string; } |
-| user             | User                                                                                                                    |
-| connections?     | Channel[] \| undefined                                                                                                  |
+| Property         | Type                                                                                                                                                                                                                                              |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id               | number                                                                                                                                                                                                                                            |
+| title            | string \| null                                                                                                                                                                                                                                    |
+| updated_at       | Date                                                                                                                                                                                                                                              |
+| created_at       | Date                                                                                                                                                                                                                                              |
+| state            | "Available" \| "Failure" \| "Procesed" \| "Processing"                                                                                                                                                                                            |
+| comment_count    | number                                                                                                                                                                                                                                            |
+| generated_title  | string                                                                                                                                                                                                                                            |
+| class            | "Image" \| "Text" \| "Link" \| "Media" \| "Attachment"                                                                                                                                                                                            |
+| base_class       | "Block"                                                                                                                                                                                                                                           |
+| content          | string \| null                                                                                                                                                                                                                                    |
+| content_html     | string \| null                                                                                                                                                                                                                                    |
+| description      | string \| null                                                                                                                                                                                                                                    |
+| description_html | string \| null                                                                                                                                                                                                                                    |
+| source           | null \| { title?: string; url: string; provider: { name: string; url: string; } \| null; }                                                                                                                                                        |
+| image            | null \| { content_type: string; display: { url: string }; filename: string; lage: { url: string }l original: { file_size: number; file_size_display: string; url: string; }; square: { url: string }; thumb: { url: string }; updated_at: Date; } |
+| user             | User                                                                                                                                                                                                                                              |
+| connections?     | Channel[] \| undefined                                                                                                                                                                                                                            |
 
 ##### Connection
 
