@@ -21,7 +21,7 @@ To get started, create a new `Arena` instance and use its methods.
 - Pass it to the `Arena` constructor ex. `new Arena('your-access-token')`
 
 ```typescript
-import { Arena } from 'arena-typed';
+import Arena from 'arena-typed';
 
 const arena = new Arena();
 
